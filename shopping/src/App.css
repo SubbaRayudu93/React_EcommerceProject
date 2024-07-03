@@ -1,0 +1,225 @@
+*{
+
+  margin: 0px;
+  
+  padding: 0px;
+  
+  box-sizing: border-box;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  
+  }
+ 
+  .mainApp {
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 20px;            /* Padding around the content */
+    border: 1px solid #ddd;   /* Light grey border */
+    border-radius: 5px;       /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;       /* Center the text horizontally */
+}
+
+.MainApp {
+    font-size: 2em;           /* Larger font size for the heading */
+    color: #333;              /* Dark grey text color */
+    margin: 0;                /* Remove default margin */
+    font-family: 'Arial', sans-serif; /* Font family */
+}
+
+  .headerSection{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(228, 224, 161);
+  margin: auto;
+
+  border: 1px solid rgb(251, 134, 134);
+}
+.headerSection {
+  background: linear-gradient(to right, #73bdd2, #feb47b); /* Change the colors as needed */
+  color: rgb(63, 97, 172); /* Text color for better visibility */
+   /* Adjust padding as needed */
+   /* Center the text horizontally */
+   padding-top: 16px;
+   border-radius: 25px;
+}
+
+.title{
+  font-size: 1rem;
+}
+.center ul li{
+  list-style: none;
+  display: inline-flex;
+  margin: 0px 10px;
+
+}
+.left{
+  flex: 4;
+  /* border: 1px solid black; */
+}
+.center{
+  flex: 4;
+  /* border: 1px solid black; */
+}
+.search{
+  flex: 2;
+  /* border: 1px solid black; */
+}
+.search input{
+padding: 5px;
+margin: 3px;
+border-radius: 10px;
+border-color: rgb(248, 248, 250);
+}
+.right{
+  flex: 4;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.bannerSection{
+  margin: 5px 0px;
+}
+
+
+
+.bannerSection {
+  position: relative;
+  height: 25vh; /* 15% of the viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.bannerSection img {
+  width: 100%;
+  height: 25vh;
+  object-fit: cover; /* Ensure the image covers the entire section */
+  position: absolute;
+ /* Ensure the image is behind the bannerBox */
+  border-radius: 2px;
+}
+
+/* Style for the headerBox container */
+
+
+/* Style for the image inside the headerBox */
+.headerBox img {
+  max-width: 10%; /* Ensure the image scales down if needed */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 10px; /* Rounded corners for the image */
+ 
+
+}
+.collectionSection {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.collectionSection h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.imageBox {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menImages {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.menImages img {
+  width: 100%;
+  height: 350px; /* Ensure a consistent height for all images */
+  object-fit: cover; /* Ensures images fill the space without distortion */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.menImages img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menImages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menImages img {
+    width: 100%;
+    height: 150px; /* Adjust height for smaller screens */
+  }
+}
+.titleBox {
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Two-color gradient */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px; /* Optional: Add some padding */
+  color: white; /* Optional: Text color */
+}
+/* LadiesCollection css */
+.ladiesCollectionSection {
+  text-align: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ladiesCollectionSection h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.imgsBox {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  justify-items: center;
+  
+}
+
+.imgsBox img {
+  max-width: 400px;
+  max-height: 450px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.imgsBox img:hover {
+  transform: scale(1.1);
+}
+/* footer css  */
+.footersection {
+  width: 100%;
+  background-color: #f8f9fa; /* Optional: Add background color if needed */
+  padding: 20px 0; /* Optional: Add padding if needed */
+}
+
+.footerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures no overflow */
+}
+
+.footerBox img {
+  max-width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Ensures no extra space around the image */
+}
